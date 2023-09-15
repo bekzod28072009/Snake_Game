@@ -222,6 +222,11 @@ namespace Snake_Game
                     ));
         }
 
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void RestartGame()
         {
             maxWidth = picCanvas.Width / Settings.Width - 1;
