@@ -1,6 +1,6 @@
 ﻿namespace Snake_Game
 {
-    partial class Form1
+    partial class GamePage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePage));
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.startButton = new System.Windows.Forms.Button();
@@ -49,28 +50,29 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.OliveDrab;
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.74419F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.25581F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
             this.tableLayoutPanel2.Controls.Add(this.startButton, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.snapButton, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtScore, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.txtHightScore, 1, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(647, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(923, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 9;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.08759F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.91241F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 322F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(215, 808);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 351F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(215, 852);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // startButton
@@ -80,10 +82,10 @@
             this.startButton.FlatAppearance.BorderSize = 0;
             this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.startButton.Location = new System.Drawing.Point(34, 31);
+            this.startButton.Location = new System.Drawing.Point(34, 34);
             this.startButton.Margin = new System.Windows.Forms.Padding(0);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(172, 98);
+            this.startButton.Size = new System.Drawing.Size(171, 108);
             this.startButton.TabIndex = 0;
             this.startButton.Text = "Start";
             this.startButton.UseVisualStyleBackColor = false;
@@ -96,10 +98,10 @@
             this.snapButton.FlatAppearance.BorderSize = 0;
             this.snapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.snapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.snapButton.Location = new System.Drawing.Point(34, 156);
+            this.snapButton.Location = new System.Drawing.Point(34, 175);
             this.snapButton.Margin = new System.Windows.Forms.Padding(0);
             this.snapButton.Name = "snapButton";
-            this.snapButton.Size = new System.Drawing.Size(172, 98);
+            this.snapButton.Size = new System.Drawing.Size(171, 105);
             this.snapButton.TabIndex = 1;
             this.snapButton.Text = "Snap";
             this.snapButton.UseVisualStyleBackColor = false;
@@ -110,9 +112,9 @@
             this.txtScore.AutoSize = true;
             this.txtScore.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtScore.Location = new System.Drawing.Point(37, 332);
+            this.txtScore.Location = new System.Drawing.Point(37, 347);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(166, 43);
+            this.txtScore.Size = new System.Drawing.Size(165, 45);
             this.txtScore.TabIndex = 2;
             this.txtScore.Text = "Score : 0";
             // 
@@ -121,9 +123,9 @@
             this.txtHightScore.AutoSize = true;
             this.txtHightScore.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHightScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtHightScore.Location = new System.Drawing.Point(37, 417);
+            this.txtHightScore.Location = new System.Drawing.Point(37, 427);
             this.txtHightScore.Name = "txtHightScore";
-            this.txtHightScore.Size = new System.Drawing.Size(166, 68);
+            this.txtHightScore.Size = new System.Drawing.Size(165, 73);
             this.txtHightScore.TabIndex = 3;
             this.txtHightScore.Text = "Hight Score";
             // 
@@ -137,28 +139,30 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(647, 808);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(923, 852);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // picCanvas
             // 
             this.picCanvas.BackColor = System.Drawing.Color.Silver;
             this.picCanvas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCanvas.Image = ((System.Drawing.Image)(resources.GetObject("picCanvas.Image")));
             this.picCanvas.Location = new System.Drawing.Point(3, 3);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(641, 802);
+            this.picCanvas.Size = new System.Drawing.Size(917, 846);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             this.picCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.UpdatePictureBoxGraphics);
             // 
-            // Form1
+            // GamePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 808);
+            this.ClientSize = new System.Drawing.Size(1138, 852);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Name = "Form1";
+            this.Name = "GamePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Snake Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

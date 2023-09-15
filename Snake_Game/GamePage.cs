@@ -11,7 +11,7 @@ using System.Drawing.Imaging;
 
 namespace Snake_Game
 {
-    public partial class Form1 : Form
+    public partial class GamePage : Form
     {
         private List<Circle> Snake = new List<Circle>();
         private Circle food = new Circle();
@@ -25,7 +25,7 @@ namespace Snake_Game
 
         bool goLeft, goRight, goDown, goUp;
 
-        public Form1()
+        public GamePage()
         {
             InitializeComponent();
 
