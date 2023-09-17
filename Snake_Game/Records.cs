@@ -10,30 +10,24 @@ using System.Windows.Forms;
 
 namespace Snake_Game
 {
-    public partial class StartPage : Form
+    public partial class Records : Form
     {
-        public StartPage()
+        public Records()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Classic game = new Classic();
-            game.Show();
+            StartPage startPage = new StartPage();
+            startPage.Show();
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Records records = new Records();
-            records.Show();
-            this.Hide();
+            Classic classic = new Classic();
+            classic.Show(classic);
         }
     }
 }

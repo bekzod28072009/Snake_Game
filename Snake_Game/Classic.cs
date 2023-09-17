@@ -11,7 +11,7 @@ using System.Drawing.Imaging;
 
 namespace Snake_Game
 {
-    public partial class GamePage : Form
+    public partial class Classic : Form
     {
         private List<Circle> Snake = new List<Circle>();
         private Circle food = new Circle();
@@ -25,7 +25,7 @@ namespace Snake_Game
 
         bool goLeft, goRight, goDown, goUp;
 
-        public GamePage()
+        public Classic()
         {
             InitializeComponent();
 
@@ -223,6 +223,18 @@ namespace Snake_Game
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StartPage startPage = new StartPage();
+            startPage.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
