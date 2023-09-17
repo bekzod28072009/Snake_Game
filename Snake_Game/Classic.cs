@@ -222,13 +222,6 @@ namespace Snake_Game
                     ));
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            StartPage startPage = new StartPage();
-            startPage.Show();
-            this.Hide();
-        }
-
         private void RestartGame()
         {
             maxWidth = picCanvas.Width / Settings.Width - 1;

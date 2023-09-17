@@ -36,7 +36,6 @@
             this.snapButton = new System.Windows.Forms.Button();
             this.txtScore = new System.Windows.Forms.Label();
             this.txtHightScore = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.picCanvas = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
@@ -60,7 +59,6 @@
             this.tableLayoutPanel2.Controls.Add(this.snapButton, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtScore, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.txtHightScore, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(844, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -132,22 +130,6 @@
             this.txtHightScore.TabIndex = 3;
             this.txtHightScore.Text = "Hight Score";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(251, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 69);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -182,7 +164,7 @@
             this.ClientSize = new System.Drawing.Size(1165, 852);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Classic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Snake Game";
@@ -206,7 +188,6 @@
         private System.Windows.Forms.Label txtHightScore;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox picCanvas;
-        private System.Windows.Forms.Button button1;
     }
 }
 
