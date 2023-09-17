@@ -31,9 +31,7 @@ namespace Snake_Game
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Records records = new Records();
-            records.Show();
-            this.Hide();
+
         }
     }
 }
