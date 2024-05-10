@@ -1,2 +1,2 @@
 # Snake_Game
-This is my first game in C# DotNet
+This is my first game in C# Windows Application.
