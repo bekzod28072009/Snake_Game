@@ -90,7 +90,7 @@ namespace Snake_Game
             picCanvas.Controls.Add(caption);
 
             SaveFileDialog fileDialog = new SaveFileDialog();
-            fileDialog.FileName = "Snake Game SmapShot Roboyics Lab";
+            fileDialog.FileName = "Snake Game SmapShot Robotics Lab";
             fileDialog.DefaultExt = "jpg";
             fileDialog.Filter = "JPG Image File | *.jpg";
             fileDialog.ValidateNames = true;
